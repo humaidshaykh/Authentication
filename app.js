@@ -8,10 +8,8 @@ app.use(cookieParser());
 app.get('/', (req, res) => {
     // res.cookie('name', "harsh");
 
-    bcrypt.genSalt(10, function(err, salt) {
-        bcrypt.hash("humaid", salt, function(err, hash) {
-            console.log(hash);
-        });
+    bcrypt.compare("humaids", "$2b$10$qpUOX/nROf9o88kfIHdGw.gMgAFlvCSqEb.J7CXoDOFrF5lnebh4C", function(err, result) {
+        console.log(result);
     });
 
     res.send("done");
