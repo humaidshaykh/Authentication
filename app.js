@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     //         console.log(hash);
     //     });
     // });
-
+    // $2b$10$qpUOX/nROf9o88kfIHdGw.gMgAFlvCSqEb.J7CXoDOFrF5lnebh4C // hash Password
     // bcrypt.compare("humaids", "$2b$10$qpUOX/nROf9o88kfIHdGw.gMgAFlvCSqEb.J7CXoDOFrF5lnebh4C", function(err, result) {
     //     console.log(result);
     // });
